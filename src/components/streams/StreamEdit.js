@@ -25,7 +25,7 @@ class StreamEdit extends React.Component {
         <h3>Edit a stream</h3>
         <StreamForm
           // initialValues={this.props.stream} It passes all the properties, which can be bad, such as ID, UserId
-          initialValues={_.pick(this.props.stream, "title", "description")} // Using lodash to help with that
+          initialValues={_.pick(this.props.stream, "title", "description")} // Using lodash to help with that, just get the title and description
           onSubmit={this.onSubmit}
         />
       </div>
